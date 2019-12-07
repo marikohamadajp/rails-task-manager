@@ -1,7 +1,8 @@
-<h1><%= @task.title %></h1>
+<h2><%= @task.title %></h2>
 
 <p><%= @task.details %></p>
 </p><%= "Completed!" if @task.completed %></p>
 <br>
+</p><%= link_to("Edit task", "/tasks")%></p>
 </p><%= link_to("Back to list", "/tasks")%></p>
 

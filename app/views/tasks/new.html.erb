@@ -1,6 +1,9 @@
- <h1>New tasks</h1>
+ <h2>New tasks</h2>
+
 <%= form_for :task do |f| %>
-  Title: <%= f.text_field :title %><br />
-  Details : <%= f.text_field :details %><br />
+  Title: <%= f.text_field :title %><br>
+  Details : <%= f.text_field :details %><br>
  <%= f.submit %>
 <% end %>
+
+</p><%= link_to("Back to list", "/tasks")%></p>

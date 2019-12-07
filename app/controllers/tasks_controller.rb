@@ -9,10 +9,12 @@ class TasksController < ApplicationController
   end
 
   def new
+    @task = Task.new(params[:task])
+    @task.save
   end
 
   def create
-    @task = Task.new(task_params)
+    @task = Task.new(params[:task])
     @task.save
   end
 
@@ -20,7 +22,7 @@ class TasksController < ApplicationController
   end
 
   def update
-    @task.update(task_params)
+    @task.update(params[:task])
   end
 
   def destory
